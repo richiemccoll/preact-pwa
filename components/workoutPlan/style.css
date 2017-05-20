@@ -1,0 +1,20 @@
+.workoutPlan {
+    padding: 1em 0;
+    text-align: center;
+}
+
+.card {
+    min-height: 300px;
+    width: 90%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: .7em auto;
+    padding: 0 2em 0 2em;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    padding: 1em;
+}
