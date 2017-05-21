@@ -5,12 +5,15 @@ import Header from "./header";
 import Home from "../routes/home";
 import Profile from "../routes/profile";
 import WorkoutPlan from "./workoutPlan";
+import BottomNav from "./bottomNav";
+import { LoadingIndicator } from "./loadingIndicator";
 
 export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      workout: {}
+      workout: {},
+      loading: true
     };
   }
 
@@ -28,12 +31,18 @@ export default class App extends Component {
       <div id="app">
         <Header />
         <Router>
-            <Home workout={this.state.workout} selectWorkoutType={this.selectWorkoutType} path="/" />
+          {this.state.loading
+            ? <LoadingIndicator />
+            : <Home
+                workout={this.state.workout}
+                selectWorkoutType={this.selectWorkoutType}
+                path="/"
+              />}
         </Router>
-         {this.state.workout.selected && <StartButton /> }
+        <BottomNav />
       </div>
     );
   }
 }
 
-const StartButton = () => <button>START!</button>
+

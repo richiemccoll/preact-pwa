@@ -1,0 +1,31 @@
+.BottomNavContainer {
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 5em;
+}
+
+.BottomNavItems {
+    display: flex;  
+    justify-content: space-around;
+    padding: 0;
+    font-size: .8em;
+}
+
+.BottomNavItems li {
+    list-style: none;
+}
+
+.BottomNavItems img {
+    height: 2em;
+}
+
+.BottomNavItems span {
+    display: block;
+}
+
+.BottomNavItems span:hover, span:active {
+    color: #673AB7;
+    text-decoration: underline;
+}
