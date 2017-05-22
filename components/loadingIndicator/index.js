@@ -11,7 +11,7 @@ export const LoadingIndicator = () => {
         viewBox="0 0 24 30"
         style="enable-background:new 0 0 50 50;"
       >
-        <rect x="0" y="10" width="4" height="10" fill="#333" opacity="0.2">
+        <rect x="0" y="10" width="4" height="10" fill="#673AB7" opacity="0.2">
           <animate
             attributeName="opacity"
             attributeType="XML"
@@ -37,7 +37,7 @@ export const LoadingIndicator = () => {
             repeatCount="indefinite"
           />
         </rect>
-        <rect x="8" y="10" width="4" height="10" fill="#333" opacity="0.2">
+        <rect x="8" y="10" width="4" height="10" fill="#673AB7" opacity="0.2">
           <animate
             attributeName="opacity"
             attributeType="XML"
@@ -63,7 +63,7 @@ export const LoadingIndicator = () => {
             repeatCount="indefinite"
           />
         </rect>
-        <rect x="16" y="10" width="4" height="10" fill="#333" opacity="0.2">
+        <rect x="16" y="10" width="4" height="10" fill="#673AB7" opacity="0.2">
           <animate
             attributeName="opacity"
             attributeType="XML"
